@@ -1,0 +1,27 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792941318
+gdre_export.log::TextFile::-1::1792941268::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::3264961159011678349::1792941268::1792941268::1::::<><><>0<>0<>772f06081c84adca20f3e309083630ec<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.s3tc.ctex::
+red.tres::StandardMaterial3D::6060718236881841873::1792941268::0::1::::<><><>0<>0<><>::
+yellow.tres::StandardMaterial3D::4456735579068511393::1792941268::0::1::::<><><>0<>0<><>::
+::res://15_PB_G3D - Audio Files/::1792941268
+SFX - Death Explosion.ogg::AudioStreamOggVorbis::2001546316391958823::1792941268::1792941268::1::::<><><>0<>0<>6535860e09e40763c32b62a83c0a03cc<>res://.godot/imported/SFX - Death Explosion.ogg-29d7f5cc46874d50bfb4e51f18cb4c03.oggvorbisstr::
+SFX - Success.ogg::AudioStreamOggVorbis::8471207446539588868::1792941268::1792941268::1::::<><><>0<>0<>9eeba3a26b319eeac14651080170b6d0<>res://.godot/imported/SFX - Success.ogg-870a84e47c4130a50c3d7dc213f5cbe8.oggvorbisstr::
+::res://16_PB_G3D - Audio File/::1792941268
+SFX - Main engine thrust.ogg::AudioStreamOggVorbis::5453115236488694964::1792941268::1792941268::1::::<><><>0<>0<>26c13644ff46fb3981e0750d027fe0c2<>res://.godot/imported/SFX - Main engine thrust.ogg-7626e1db906ff3df7a65f2f63ccf9b92.oggvorbisstr::
+::res://particles_for_game/::1792941268
+booster_particles.tscn::PackedScene::1453155181391318073::1792941268::0::1::::<><><>0<>0<><>::
+explosion_particles.tscn::PackedScene::7308022214277692275::1792941268::0::1::::<><><>0<>0<><>::
+success_particles.tscn::PackedScene::643357747384234160::1792941268::0::1::::<><><>0<>0<><>::
+::res://scenes/::1792941268
+floor.tscn::PackedScene::4770106677715010898::1792941268::0::1::::<><><>0<>0<><>::
+level_1.tscn::PackedScene::2994924609987914653::1792941268::0::1::::<><><>0<>0<><>::uid://b87w7v3hvddli::::res://scenes/floor.tscn<>res://scripts/launching_pad.gd<>uid://brwt58sp1uh8y::::res://scenes/player.tscn
+level_2.tscn::PackedScene::1183724621381065860::1792941268::0::1::::<><><>0<>0<><>::res://scripts/launching_pad.gd<>uid://brwt58sp1uh8y::::res://scenes/player.tscn<>uid://b87w7v3hvddli::::res://scenes/floor.tscn
+level_3.tscn::PackedScene::165757402992751658::1792941268::0::1::::<><><>0<>0<><>::res://scripts/launching_pad.gd<>uid://brwt58sp1uh8y::::res://scenes/player.tscn<>uid://b87w7v3hvddli::::res://scenes/floor.tscn
+level_4.tscn::PackedScene::7329541754392712235::1792941268::0::1::::<><><>0<>0<><>::res://scripts/launching_pad.gd<>uid://brwt58sp1uh8y::::res://scenes/player.tscn<>uid://41ev0a0uyc3g::::res://scenes/moving_hazard.tscn<>uid://b87w7v3hvddli::::res://scenes/floor.tscn
+moving_hazard.tscn::PackedScene::2089431970998874470::1792941268::0::1::::<><><>0<>0<><>::res://scripts/moving_hazard.gd
+player.tscn::PackedScene::3626256294602782006::1792941268::0::1::::<><><>0<>0<><>::res://scripts/player.gd<>uid://b4q41wepa8jl6::::res://yellow.tres<>uid://csl4e5lbi2kov::::res://red.tres<>uid://dsxrswvlh7kvc::::res://15_PB_G3D - Audio Files/SFX - Success.ogg<>uid://cjxsam8tsykw7::::res://16_PB_G3D - Audio File/SFX - Main engine thrust.ogg<>uid://3rtf708g6yl0::::res://15_PB_G3D - Audio Files/SFX - Death Explosion.ogg<>uid://ux6ivcx1ovdp::::res://particles_for_game/booster_particles.tscn<>uid://dcecb8hw7dbrv::::res://particles_for_game/explosion_particles.tscn<>uid://jfwajmrh6ca7::::res://particles_for_game/success_particles.tscn
+::res://scripts/::1792941268
+launching_pad.gd::GDScript::3270114127459409574::1792941268::0::1::::<>CSGBox3D<><>0<>0<><>::
+moving_hazard.gd::GDScript::441388067415717394::1792941268::0::1::::<>AnimatableBody3D<><>0<>0<><>::
+player.gd::GDScript::7163377806485303947::1792941268::0::1::::<>RigidBody3D<><>0<>0<><>::

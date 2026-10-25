@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://cmkaaiin02be"]
+
+[ext_resource type="Script" path="res://scripts/launching_pad.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://brwt58sp1uh8y" path="res://scenes/player.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://b87w7v3hvddli" path="res://scenes/floor.tscn" id="3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_763a6"]
+albedo_color = Color(0, 0.658824, 0.113725, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0dslm"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uf3ne"]
+size = Vector3(281, 1, 6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gn787"]
+albedo_color = Color(0, 0.788235, 1, 1)
+
+[node name="level1" type="Node3D"]
+
+[node name="launching pad" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -0.1, 0)
+use_collision = true
+size = Vector3(2, 0.7, 2)
+material = SubResource("StandardMaterial3D_763a6")
+
+[node name="landing pad" type="CSGBox3D" parent="." groups=["goal"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -0.1, 0)
+use_collision = true
+size = Vector3(2, 0.7, 2)
+material = SubResource("StandardMaterial3D_0dslm")
+script = ExtResource("1")
+file_path = "res://scenes/level_4.tscn"
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.461, 9)
+
+[node name="player" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.9213, 0)
+
+[node name="killzone2" type="Area3D" parent="." groups=["death_area"]]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 23.2444, -19.6137, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="killzone2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 156, 7.00001, 0.5)
+shape = SubResource("BoxShape3D_uf3ne")
+
+[node name="killzone3" type="Area3D" parent="." groups=["death_area"]]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -8.75562, -19.6137, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="killzone3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 156, 7.00001, 0.5)
+shape = SubResource("BoxShape3D_uf3ne")
+
+[node name="obstacle" type="CSGBox3D" parent="." groups=["death_area"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.66512, 0.5)
+use_collision = true
+size = Vector3(3, 2, 4)
+material = SubResource("StandardMaterial3D_gn787")
+
+[node name="floor2" parent="." instance=ExtResource("3")]
+
+[connection signal="body_entered" from="killzone2" to="player" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone3" to="player" method="_on_killzone_body_entered"]

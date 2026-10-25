@@ -1,0 +1,33 @@
+GDRE Tools v2.8.0-beta.2
+macOS 26.6.2, Apple M4 (Apple9), metal
+Opening file: ~/Downloads/rocket game.exe
+Loaded 19 imported files
+Detected Engine Version: 4.3.0
+Detected Bytecode Revision: 4.3.0-stable (77af6ca)
+Verified 42 files, no errors detected!
+Extracted 42 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     3
+Scripts not decompiled:                 0
+Imported resources for export session:  19
+Successfully converted:                 19
+Lossy:                                  1
+Rewrote metadata:                       4
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.3.0 to edit the project.
+
+*******************************************************************************
+
